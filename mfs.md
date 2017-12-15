@@ -4,21 +4,21 @@
     + server 64
 2. 安装软件列表
     + moosefs-cgi_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-cgi_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-cgi_3.0.86-1_amd64.deb
     + moosefs-cgiserv_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-cgiserv_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-cgiserv_3.0.86-1_amd64.deb
     + moosefs-chunkserver_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
     + moosefs-cli_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-cli_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-cli_3.0.86-1_amd64.deb
     + moosefs-client_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
     + moosefs-master_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-master_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-master_3.0.86-1_amd64.deb
     + moosefs-metalogger_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-metalogger_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-metalogger_3.0.86-1_amd64.deb
     + moosefs-netdump_3.0.86-1_amd64.deb
-        - wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-netdump_3.0.86-1_amd64.deb
+        - wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-netdump_3.0.86-1_amd64.deb
 
 3. 具体关联
 
@@ -106,9 +106,9 @@
 1. mfs master部署
  - 详细步骤
  ```
- root@loocha9:~/mfs# wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-master_3.0.86-1_amd64.deb
---2017-11-24 10:47:16--  http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-master_3.0.86-1_amd64.deb
-Connecting to 180.96.7.219:8080... connected.
+ root@loocha9:~/mfs# wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-master_3.0.86-1_amd64.deb
+--2017-11-24 10:47:16--  http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-master_3.0.86-1_amd64.deb
+Connecting to 192.168.1.31:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 379238 (370K) [application/octet-stream]
 Saving to: ‘moosefs-master_3.0.86-1_amd64.deb’
@@ -162,9 +162,9 @@ mfsmaster daemon initialized properly
  2. mfs cgiserver 部署
  - 详细部署
  ```
- root@loocha9:~/mfs# wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-cgiserv_3.0.86-1_amd64.deb
---2017-11-24 12:59:53--  http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-cgiserv_3.0.86-1_amd64.deb
-Connecting to 180.96.7.219:8080... connected.
+ root@loocha9:~/mfs# wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-cgiserv_3.0.86-1_amd64.deb
+--2017-11-24 12:59:53--  http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-cgiserv_3.0.86-1_amd64.deb
+Connecting to 192.168.1.31:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 30106 (29K) [application/octet-stream]
 Saving to: ‘moosefs-cgiserv_3.0.86-1_amd64.deb’
@@ -172,9 +172,9 @@ Saving to: ‘moosefs-cgiserv_3.0.86-1_amd64.deb’
 100%[=============================================================================================================================>] 30,106      --.-K/s   in 0s      
 
 2017-11-24 12:59:53 (59.3 MB/s) - ‘moosefs-cgiserv_3.0.86-1_amd64.deb’ saved [30106/30106]
-root@loocha9:~/mfs# wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-cgi_3.0.86-1_amd64.deb
---2017-11-24 13:00:25--  http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-cgi_3.0.86-1_amd64.deb
-Connecting to 180.96.7.219:8080... connected.
+root@loocha9:~/mfs# wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-cgi_3.0.86-1_amd64.deb
+--2017-11-24 13:00:25--  http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-cgi_3.0.86-1_amd64.deb
+Connecting to 192.168.1.31:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 81914 (80K) [application/x-debian-package]
 Saving to: ‘moosefs-cgi_3.0.86-1_amd64.deb’
@@ -237,9 +237,9 @@ tcp        0      0 0.0.0.0:9425            0.0.0.0:*               LISTEN      
  3. mfs metalogger 部署
  - 详细部署
  ```
- root@loocha9:~/mfs# wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-metalogger_3.0.86-1_amd64.deb
---2017-11-24 13:16:19--  http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-metalogger_3.0.86-1_amd64.deb
-Connecting to 180.96.7.219:8080... connected.
+ root@loocha9:~/mfs# wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-metalogger_3.0.86-1_amd64.deb
+--2017-11-24 13:16:19--  http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-metalogger_3.0.86-1_amd64.deb
+Connecting to 192.168.1.31:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 58012 (57K) [application/octet-stream]
 Saving to: ‘moosefs-metalogger_3.0.86-1_amd64.deb’
@@ -290,9 +290,9 @@ root@loocha9:/etc/mfs# ps axf|grep mfsmetalogger
  4. mfs chunkserver 部署
  - 详细部署
 ```
-root@loocha9:~/mfs# wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
---2017-11-24 13:37:37--  http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
-Connecting to 180.96.7.219:8080... connected.
+root@loocha9:~/mfs# wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
+--2017-11-24 13:37:37--  http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
+Connecting to 192.168.1.31:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 186346 (182K) [application/octet-stream]
 Saving to: ‘moosefs-chunkserver_3.0.86-1_amd64.deb’
@@ -376,7 +376,7 @@ mfs      23514  0.3  0.2 302672 138032 ?       S<l  13:47   0:00 mfschunkserver 
 cd ~
 mkdir mfs
 cd mfs/
-wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
+wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
 dpkg -i moosefs-chunkserver_3.0.86-1_amd64.deb
 cd /etc/mfs/
 cp mfschunkserver.cfg.sample mfschunkserver.cfg
@@ -395,9 +395,9 @@ netstat -lnp|grep 9422
 ```
 root@realcloud41:~# mkdir mfs
 root@realcloud41:~# cd mfs/
-root@realcloud41:~/mfs# wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
---2017-11-24 14:22:06--  http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
-Connecting to 180.96.7.219:8080... connected.
+root@realcloud41:~/mfs# wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
+--2017-11-24 14:22:06--  http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-chunkserver_3.0.86-1_amd64.deb
+Connecting to 192.168.1.31:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 186346 (182K) [application/x-debian-package]
 Saving to: ‘moosefs-chunkserver_3.0.86-1_amd64.deb’
@@ -451,7 +451,7 @@ tcp        0      0 0.0.0.0:9422            0.0.0.0:*               LISTEN      
 
 ### mfs client 快速部署
 ```
-wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
+wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
 dpkg -i moosefs-client_3.0.86-1_amd64.deb 
 mfsmount -H  mfs.master.org /opt/mfs/
 ```
@@ -460,9 +460,9 @@ mfsmount -H  mfs.master.org /opt/mfs/
 ```
 root@loocha37:~# mkdir mfs
 root@loocha37:~# cd mfs/
-root@loocha37:~/mfs# wget http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
---2017-11-27 09:29:25--  http://180.96.7.219:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
-Connecting to 180.96.7.219:8080... connected.
+root@loocha37:~/mfs# wget http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
+--2017-11-27 09:29:25--  http://192.168.1.31:8080/software/cmz/moosefs/package/moosefs-client_3.0.86-1_amd64.deb
+Connecting to 192.168.1.31:8080... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 255862 (250K) [application/octet-stream]
 Saving to: ‘moosefs-client_3.0.86-1_amd64.deb’
